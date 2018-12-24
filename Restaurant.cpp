@@ -4,44 +4,47 @@
 using namespace std;
 
 Restaurant::Restaurant(): 
-	_name("None"),    _num_dishes(0),
-	_address("None"), _num_tables(0)
+	name("None"), num_of_dishes(0),
+	address("None"), num_of_tables(0)
 {
-	cout << "Standart restaurant " << _name << " created" << endl;
+	cout << "Standart restaurant " << name << " created" << endl;
 }
+
 Restaurant::Restaurant(
-	string name,    int num_dishes,
-	string address, int num_tables
+	string name_of_restaurant, int num_dishes_in_restaurant,
+	string address_of_restaurant, int num_tables_in_restaurant
 ): 
-	_name(name), _num_dishes(num_dishes),
-	_address(address), _num_tables(num_tables)
+	name(name_of_restaurant), num_of_dishes(num_dishes_in_restaurant),
+	address(address_of_restaurant), num_of_tables(num_tables_in_restaurant)
 {
-	cout << "Ordinary restaurant " << _name << " created" << endl;
+	cout << "Ordinary restaurant " << name << " created" << endl;
 }
+
 Restaurant::~Restaurant(){
-	cout << "Restaurant " << _name << " destroyed" << endl;
+	cout << "Restaurant " << name << " destroyed" << endl;
 }
-string Restaurant::getName()
+
+string Restaurant::get_name()
 {
-	return _name;
+	return name;
 }
-int    Restaurant::getNum_Dishes()
+int    Restaurant::get_num_of_dishes()
 {
-	return _num_dishes;
+	return num_of_dishes;
 }
-string Restaurant::getAddress()
+string Restaurant::get_address()
 {
-	return _address;
+	return address;
 }
-int    Restaurant::getNum_Tables()
+int    Restaurant::get_num_of_tables()
 {
-	return _num_tables;
+	return num_of_tables;
 }
-double Restaurant::getdouble()
+double Restaurant::get_double()
 {
-	return _double;
+	return double_number;
 }
-float  Restaurant::getfloat()
+float  Restaurant::get_float()
 {
-	return _float;
+	return float_number;
 }

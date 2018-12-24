@@ -6,28 +6,28 @@ using namespace std;
 class Restaurant
 {
     private:
-	    string _name;
-		string _address;
-		int    _num_dishes;
-		int    _num_tables;
+	    string name;
+		string address;
+		int num_of_dishes;
+		int num_of_tables;
     public:
 		Restaurant();
         Restaurant(
-            string name,    int num_dishes,
-	        string address, int num_tables
-        );
+			string name_of_restaurant, int num_dishes_in_restaurant,
+			string address_of_restaurant, int num_tables_in_restaurant
+		);
 		~Restaurant();
         
-	    string getName();
-	    int    getNum_Dishes();
-		string getAddress();
-		int    getNum_Tables();
-		double getdouble();
-		float  getfloat();
+	    string get_name();
+		string get_address();
+		int    get_num_of_dishes();
+		int    get_num_of_tables();
+		double get_double();
+		float  get_float();
 
-		int    _int = -1;
-		string _string = ".";
+		int    int_number = -1;
+		string string_variable = ".";
 	protected:
-		double _double = 0;
-		float  _float = 1;
+		double double_number = 0;
+		float  float_number = 1;
 };
